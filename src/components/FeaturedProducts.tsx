@@ -37,7 +37,7 @@ const FeaturedProducts = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured Products</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-[#6351ce]">Featured Products</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <Card key={product.id} className="hover:shadow-lg transition-shadow">
@@ -53,10 +53,10 @@ const FeaturedProducts = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600">{product.description}</p>
-                <p className="text-lg font-bold mt-2">{product.price}</p>
+                <p className="text-lg font-bold mt-2 text-[#6351ce]">{product.price}</p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">Add to Cart</Button>
+                <Button className="w-full bg-[#6351ce] hover:bg-[#6351ce]/90">Add to Cart</Button>
               </CardFooter>
             </Card>
           ))}
