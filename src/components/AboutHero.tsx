@@ -11,14 +11,23 @@ const AboutHero = () => {
               About iGenomics
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Leading the way in genomics research and innovation. Our commitment to excellence drives breakthrough discoveries in genetic science.
+              Founded in 2014, iGenomics is dedicated to pioneering advancements in genetic testing and providing comprehensive genomic solutions. Our commitment to excellence drives breakthrough discoveries in genetic science.
             </p>
-            <Button 
-              size="lg"
-              className="bg-[#6351ce] hover:bg-[#6351ce]/90"
-            >
-              Contact Us
-            </Button>
+            <div className="flex gap-4">
+              <Button 
+                size="lg"
+                className="bg-[#6351ce] hover:bg-[#6351ce]/90"
+              >
+                Contact Us
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-[#6351ce] text-[#6351ce] hover:bg-[#6351ce]/10"
+              >
+                Our Services
+              </Button>
+            </div>
           </div>
           <div className="relative">
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-[#6351ce]/20 to-[#6351ce]/10 flex items-center justify-center">
